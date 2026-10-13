@@ -87,7 +87,7 @@ def main():
     d = ImageDraw.Draw(canvas)
     f_t = font(24)
     d.text((20, 20), f"输入 {GW//2}×{GH//2}", font=f_t, fill="#c0392b")
-    d.text((GW + 40, 20), "image-sr 超分 4×", font=f_t, fill="#1e8449")
+    d.text((GW + 40, 20), "image-sr-skill 超分 4×", font=f_t, fill="#1e8449")
     d.text((GW * 2 + 60, 20), "原始高清参考", font=f_t, fill="#2471a3")
     canvas.save(ASSETS / "demo_compare.png")
     print("示例图已生成:", ASSETS / "demo_compare.png")

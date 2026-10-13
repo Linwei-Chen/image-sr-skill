@@ -1,5 +1,5 @@
 ---
-name: image-sr
+name: image-sr-skill
 description: 用 Real-ESRGAN 把图片 AI 超分放大 4 倍（可选 2 倍），本地推理、免费、无需联网服务。凡用户要求"放大图片/提高分辨率/变高清/超分/upscale/图太糊看不清"，或截图、教材图、扫描件、老照片需要清晰化时使用——即使用户没说"放大"两个字。
 ---
 

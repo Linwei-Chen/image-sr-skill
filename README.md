@@ -2,7 +2,7 @@
 
 一个给 AI Agent 用的**图像超分辨率 skill**：把低分辨率图片用 [Real-ESRGAN](https://github.com/xinntao/Real-ESRGAN) 在本地放大 4 倍（可选 2 倍），免费、离线、无需任何图像处理网站或 API Key。
 
-专为 [ZCode](https://zcode.ai)、Claude Code 等编码 Agent 设计——当用户说"这张图能不能高清一点""放大这张截图""图太糊了"时，Agent 自动调用本 skill 完成。
+专为 [ZCode](https://zcode.ai)、Claude Code 等编码 Agent 设计——当用户说"这张图能不能高清一点""放大这张截图""图太糊了"时，Agent 自动调用本 skill 完成。GitHub 仓库名与 skill 名统一为 `image-sr-skill`。
 
 ![前后对比示例](assets/demo_compare.png)
 
@@ -20,8 +20,8 @@
 ## 快速开始
 
 ```bash
-git clone https://github.com/Linwei-Chen/image-sr.git
-cd image-sr
+git clone https://github.com/Linwei-Chen/image-sr-skill.git
+cd image-sr-skill
 bash scripts/setup.sh        # 首次：建 venv + 装 torch + 下权重，约 2-5 分钟
 
 # 超分一张图（默认 4 倍，输出 <原名>_x4.png 到原图目录）
@@ -46,7 +46,7 @@ venv/bin/python scripts/sr.py <输入图片> [选项]
 ### ZCode / Claude Code（用户级，所有项目可用）
 
 ```bash
-git clone https://github.com/Linwei-Chen/image-sr.git ~/.agents/skills/image-sr
+git clone https://github.com/Linwei-Chen/image-sr-skill.git ~/.agents/skills/image-sr-skill
 ```
 
 重启会话后，Agent 在你要求"放大图片 / 超分 / 变高清"时会自动触发；也可手动 `bash ~/.agents/skills/image-sr/scripts/setup.sh` 预装环境。
